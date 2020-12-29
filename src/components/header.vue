@@ -1,12 +1,14 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="header row" style="background-color: black; color: white; padding: 1rem">
+    <div class="col-4">aasdasds</div>
+    <div class="col-4">asdasdasd</div>
+    <div class="col-4">asdsadasdas</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'header',
   props: {
     msg: String
   }
