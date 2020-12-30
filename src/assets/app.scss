@@ -1,1 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
+
+.justify_around {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.justify_evenly {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.justify_between {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

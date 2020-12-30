@@ -1,8 +1,22 @@
 <template>
-  <div class="header row" style="background-color: black; color: white; padding: 1rem">
-    <div class="col-4">aasdasds</div>
-    <div class="col-4">asdasdasd</div>
-    <div class="col-4">asdsadasdas</div>
+  <div class="header_top row" style="background-color: black; color: white;">
+    <div class="col-4 mt-2">
+      <font-awesome-icon class="mr-2" :icon="['fab', 'facebook-f']" />
+      <font-awesome-icon :icon="['fab', 'instagram']" />
+    </div>
+    <div class="col-4 mt-2">{{msg}}</div>
+    <div class="col-4">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" style="color: white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select Language
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">English</a>
+          <a class="dropdown-item" href="#">French</a>
+          <a class="dropdown-item" href="#">Korean</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
