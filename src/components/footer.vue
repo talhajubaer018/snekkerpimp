@@ -2,19 +2,50 @@
   <div class="card mt-3" style="border: 0; background-color: lightgrey">
     <div class="row">
       <div class="offset-2 col-6">
-        <div class="card-header" style="background-color: transparent; border: 0; width: 100%; display: flex; justify-content: space-between">
-        <div>About Us</div>
-        <div>Support</div>
-        <div>Shop</div>
-        <div>Contact</div>
-        <div>Payment Options</div>
-      </div>
+        <div class="card-header row" style="background-color: transparent; border: 0; width: 100%; display: flex; justify-content: space-between">
+          <div>About Us</div>
+          <div>Support</div>
+          <div>Shop</div>
+          <div>Contact</div>
+          <div>Payment Options</div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-4" style="text-align: left">
+            <div>Our Company</div>
+            <div>Our History</div>
+            <div>Contact</div>
+            <div>Jobs</div>
+            <div>Journal</div>
+            <div>Store Locations</div>
+          </div>
+          <div class="col-4" style="text-align: left">
+            <div>FAQs</div>
+            <div>Order Tracking</div>
+            <div>Terms & Conditions</div>
+            <div>Privacy Policy</div>
+            <div>Returns & Refunds</div>
+            <div>Support</div>
+          </div>
+          <div class="col-4" style="text-align: left">
+            <div>Women</div>
+            <div>Men</div>
+            <div>Accessories</div>
+            <div>Tops</div>
+            <div>Jeans</div>
+            <div>Shirt</div>
+          </div>
+        </div>
+        <div class="row mt-4" style="text-align: left">
+          <div class="col-4">Terms & Conditions</div>
+          <div class="col-4">Privacy & Cookie Policy</div>
+          <div class="col-4">Help Center</div>
+        </div>
       </div>
       <div class="col-4 mt-3">
         <div>Follow Us</div>
         <div class="mt-2 mb-3">
-          <font-awesome-icon class="mr-2" :icon="['fab', 'facebook-f']" />
-          <font-awesome-icon :icon="['fab', 'instagram']" />
+          <font-awesome-icon class="mr-2" :icon="['fab', 'facebook-f']"/>
+          <font-awesome-icon :icon="['fab', 'instagram']"/>
         </div>
         <div>Payment Options</div>
         <div class="mt-2">
@@ -24,10 +55,6 @@
           <font-awesome-icon class="mr-2" :icon="['fab', 'cc-amex']" size="2x"/>
         </div>
       </div>
-    </div>
-    <div class="text-left mt-2">
-      <div class="mr-4" style="float: left">Privacy and Cookie Policy</div>
-      <div>Help Center</div>
     </div>
 
   </div>

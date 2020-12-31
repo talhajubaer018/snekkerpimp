@@ -14,29 +14,137 @@
     </div>
     <div class="card mt-3" style="border: 0">
       <div class="card-header row" style="background-color: transparent; border: 0">
-        <img class="category_image col-4" src="../assets/men-category.jpg"/>
-        <img class="category_image col-4" src="../assets/women-category.jpg"/>
-        <img class="category_image col-4" src="../assets/accessory-category.jpg"/>
+        <div class="col-4">
+          <div style="position: absolute; padding: 2rem; font-size: 2em">Men</div>
+          <img class="image_width_100" src="../assets/men-category.jpg"/>
+        </div>
+        <div class="col-4">
+          <div style="position: absolute; padding: 2rem; font-size: 2em">Women</div>
+          <img class="image_width_100" src="../assets/women-category.jpg"/>
+        </div>
+        <div class="col-4">
+          <div style="position: absolute; padding: 2rem; font-size: 2em">Accessory</div>
+          <img class="image_width_100" src="../assets/accessory-category.jpg"/>
+        </div>
       </div>
     </div>
     <div class="card mt-3" style="border: 0">
       <div class="card-header row" style="background-color: transparent; border: 0">
-        <img class="category_image col-6" src="../assets/kona-thumb.jpg"/>
-        <img class="category_image col-6" src="../assets/kona-thumb-2.jpg"/>
+        <div class="col-6">
+          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 2em; color: white">
+            <div>Men</div>
+            <div>Discover More</div>
+          </div>
+          <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
+        </div>
+        <div class="col-6">
+          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 2em; color: white">
+            <div>Women</div>
+            <div>Discover More</div>
+          </div>
+          <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
+        </div>
       </div>
     </div>
     <div class="card mt-3" style="border: 0">
       <div class="card-header row" style="background-color: transparent; border: 0">
-        <img class="category_image col-12" src="../assets/coats-jackets.jpg"/>
+        <div class="col-12">
+          <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 3em; color: white">
+            <div>Coats and Jackets</div>
+            <div>
+              <button type="button" class="btn btn-light" style="border-radius: 20px">
+                Shop Now
+                <font-awesome-icon :icon="['fas', 'long-arrow-alt-right']"/>
+              </button>
+            </div>
+          </div>
+          <img class="image_width_100" src="../assets/coats-jackets.jpg"/>
+        </div>
       </div>
     </div>
     <div class="card mt-3" style="border: 0">
       <div class="card-title">New Arrivals</div>
-      <div class="card-header row" style="background-color: transparent; border: 0">
-        <img class="category_image col-3" src="../assets/kona-thumb.jpg"/>
-        <img class="category_image col-3" src="../assets/kona-thumb-2.jpg"/>
-        <img class="category_image col-3" src="../assets/kona-thumb.jpg"/>
-        <img class="category_image col-3" src="../assets/kona-thumb-2.jpg"/>
+      <div class="card-header row mb-2" style="background-color: transparent; border: 0">
+        <div class="col-3">
+          <div>
+            <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
+          </div>
+          <div style="text-align: left">
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
+            </div>
+            <div style="clear: left">
+              <div>Julia Coat</div>
+              <div>$249.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div>
+            <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
+          </div>
+          <div style="text-align: left">
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
+            </div>
+            <div style="clear: left">
+              <div>Julia Coat</div>
+              <div>$249.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div>
+            <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
+          </div>
+          <div style="text-align: left">
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
+            </div>
+            <div style="clear: left">
+              <div>Julia Coat</div>
+              <div>$249.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div>
+            <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
+          </div>
+          <div style="text-align: left">
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
+            </div>
+            <div style="float: left; padding: 5px">
+              <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
+            </div>
+            <div style="clear: left">
+              <div>Julia Coat</div>
+              <div>$249.00</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="card mt-3" style="border: 0">
@@ -90,5 +198,8 @@ position: absolute;
 }
 .featured_image {
   padding: 0;
+}
+.image_width_100 {
+  width: 100%;
 }
 </style>
