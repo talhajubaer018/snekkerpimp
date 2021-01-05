@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Header msg="Free Delivery on all orders over $60"/>
     <div>
       <div class="slider_img"></div>
       <Navbar/>
@@ -147,19 +148,19 @@
         </div>
       </div>
     </div>
-    <div class="card mt-3" style="border: 0">
-      <div class="card-title">Sign Up</div>
+    <div class="card mt-4" style="border: 0">
+      <div class="card-title" style="color: darkgray">Sign Up</div>
       <div class="row">
         <div class="input-group mb-3 offset-5 col-3">
           <input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
           <div class="input-group-append">
-            <button class="btn btn-dark" type="button">Sign Up</button>
+            <button class="btn btn-dark" type="button" style="border-radius: 20px; border-bottom-left-radius: 0; border-top-left-radius: 0">Sign Up</button>
           </div>
         </div>
       </div>
     </div>
     <div class="card mt-3" style="border: 0">
-      <div class="card-header row" style="background-color: transparent; border: 0">
+      <div class="card-header row" style="background-color: transparent; border: 0; padding-bottom: 0">
         <img class="featured_image col-2" src="../assets/kona-thumb.jpg"/>
         <img class="featured_image col-2" src="../assets/kona-thumb-2.jpg"/>
         <img class="featured_image col-2" src="../assets/kona-thumb.jpg"/>
@@ -168,7 +169,7 @@
         <img class="featured_image col-2" src="../assets/kona-thumb-2.jpg"/>
       </div>
     </div>
-
+    <Footer/>
   </div>
 </template>
 
@@ -176,11 +177,15 @@
 // @ is an alias to /src
 
 import Navbar from '@/components/navbar.vue'
+import Header from '@/components/header.vue'
+import Footer from '@/components/footer.vue'
 
 export default {
   name: 'Home',
   components: {
-    Navbar
+    Navbar,
+    Header,
+    Footer
   }
 }
 </script>
@@ -201,5 +206,13 @@ position: absolute;
 }
 .image_width_100 {
   width: 100%;
+}
+.navbar {
+  top: 0;
+  transform: translateY(150%);
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly
 }
 </style>

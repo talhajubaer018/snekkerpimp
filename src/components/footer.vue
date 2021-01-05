@@ -1,8 +1,8 @@
 <template>
-  <div class="card mt-3" style="border: 0; background-color: lightgrey">
+  <div class="card" style="border: 0; background-color: #f7f8f9; padding-top: 2rem">
     <div class="row">
       <div class="offset-2 col-6">
-        <div class="card-header row" style="background-color: transparent; border: 0; width: 100%; display: flex; justify-content: space-between">
+        <div class="card-header row" style="color: #b9b9ba; background-color: transparent; border: 0; width: 100%; display: flex; justify-content: space-between">
           <div>About Us</div>
           <div>Support</div>
           <div>Shop</div>
@@ -41,13 +41,13 @@
           <div class="col-4">Help Center</div>
         </div>
       </div>
-      <div class="col-4 mt-3">
-        <div>Follow Us</div>
+      <div class="offset-1 col-3 mt-3" style="text-align: left">
+        <div style="color: #b9b9ba;">Follow Us</div>
         <div class="mt-2 mb-3">
           <font-awesome-icon class="mr-2" :icon="['fab', 'facebook-f']"/>
           <font-awesome-icon :icon="['fab', 'instagram']"/>
         </div>
-        <div>Payment Options</div>
+        <div style="color: #b9b9ba;">Payment Options</div>
         <div class="mt-2">
           <font-awesome-icon class="mr-2" :icon="['fab', 'cc-paypal']" size="2x"/>
           <font-awesome-icon class="mr-2" :icon="['fab', 'cc-visa']" size="2x"/>

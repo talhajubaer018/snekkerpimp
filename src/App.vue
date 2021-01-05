@@ -1,21 +1,15 @@
 <template>
   <div id="app">
-    <Header msg="Free Delivery on all orders over $60"/>
     <router-view/>
-    <Footer/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Header from '@/components/header.vue'
-import Footer from '@/components/footer.vue'
 
 export default {
   name: 'Home',
   components: {
-    Header,
-    Footer
   }
 }
 </script>
