@@ -1,7 +1,7 @@
 <template>
   <div class="card" style="border: 0; background-color: #f7f8f9; padding-top: 2rem">
-    <div class="row">
-      <div class="offset-2 col-6">
+    <div class="row" style="padding-left: 2rem">
+      <div class="offset-2 col-md-6">
         <div class="card-header row" style="color: #b9b9ba; background-color: transparent; border: 0; width: 100%; display: flex; justify-content: space-between">
           <div>About Us</div>
           <div>Support</div>
@@ -10,7 +10,7 @@
           <div>Payment Options</div>
         </div>
         <div class="row mt-2">
-          <div class="col-4" style="text-align: left">
+          <div class="col-md-4" style="text-align: left">
             <div>Our Company</div>
             <div>Our History</div>
             <div>Contact</div>
@@ -18,7 +18,7 @@
             <div>Journal</div>
             <div>Store Locations</div>
           </div>
-          <div class="col-4" style="text-align: left">
+          <div class="col-md-4" style="text-align: left">
             <div>FAQs</div>
             <div>Order Tracking</div>
             <div>Terms & Conditions</div>
@@ -26,7 +26,7 @@
             <div>Returns & Refunds</div>
             <div>Support</div>
           </div>
-          <div class="col-4" style="text-align: left">
+          <div class="col-md-4" style="text-align: left">
             <div>Women</div>
             <div>Men</div>
             <div>Accessories</div>
@@ -36,12 +36,12 @@
           </div>
         </div>
         <div class="row mt-4" style="text-align: left">
-          <div class="col-4">Terms & Conditions</div>
-          <div class="col-4">Privacy & Cookie Policy</div>
-          <div class="col-4">Help Center</div>
+          <div class="col-md-4">Terms & Conditions</div>
+          <div class="col-md-4">Privacy & Cookie Policy</div>
+          <div class="col-md-4">Help Center</div>
         </div>
       </div>
-      <div class="offset-1 col-3 mt-3" style="text-align: left">
+      <div class="offset-1 col-md-3 mt-3" style="text-align: left">
         <div style="color: #b9b9ba;">Follow Us</div>
         <div class="mt-2 mb-3">
           <font-awesome-icon class="mr-2" :icon="['fab', 'facebook-f']"/>

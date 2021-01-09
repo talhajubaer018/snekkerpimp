@@ -1,11 +1,11 @@
 <template>
   <div class="header_top row" style="background-color: black; color: white;">
-    <div class="col-5 mt-2">
+    <div class="col-md-5 mt-2">
       <font-awesome-icon class="mr-2" :icon="['fab', 'facebook-f']" />
       <font-awesome-icon :icon="['fab', 'instagram']" />
     </div>
-    <div class="col-3 mt-2">{{msg}}</div>
-    <div class="col-4">
+    <div class="col-md-3 mt-2">{{msg}}</div>
+    <div class="col-md-4">
       <div class="dropdown">
         <button class="btn dropdown-toggle" style="color: white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Select Language
