@@ -2,17 +2,25 @@
   <div class="navbar row" style="">
     <div class='col-md-12'>
       <div class="row">
-        <div class="navigation_container offset-2 col-md-4" style="text-align: left">
+        <div class="navigation_container col-md-4 mt-3" style="text-align: left">
           <router-link to="/brands" style="padding: 1.5rem;">Brands</router-link>
           <router-link to="/category" style="padding: 1.5rem">Category</router-link>
           <router-link to="/collections" style="padding: 1.5rem">Collections</router-link>
           <router-link to="/accessories" style="padding: 1.5rem">Accessories</router-link>
         </div>
-        <div class="col-md-2">KONA</div>
-        <div class="col-md-3" style="padding: 0; width: 100%; display: flex; justify-content: space-around">
+        <div class="col-md-4 text-center">
+          <div class="logo mx-auto"></div>
+        </div>
+        <div class="col-md-4 text-right mt-3" style="padding: 0; width: 100%; display: flex; justify-content: space-between">
           <div>Login</div>
           <div>
-            <font-awesome-icon :icon="['fas', 'search']"/>
+            <div @click="search_click_function" v-show="!search_clicked" type="button">
+              <font-awesome-icon :icon="['fas', 'search']"/>
+            </div>
+            <div v-show="search_clicked">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <font-awesome-icon style="position: absolute; top: 50%; transform: translateY(calc(-50% - 5px)); margin-left: 5px" :icon="['fas', 'search']"/>
+            </div>
           </div>
           <div>
             <font-awesome-icon :icon="['far', 'heart']"/>
@@ -33,6 +41,16 @@ export default {
   name: 'navbar',
   props: {
     msg: String
+  },
+  data () {
+    return {
+      search_clicked: false
+    }
+  },
+  methods: {
+    search_click_function () {
+      this.search_clicked = true
+    }
   }
 }
 </script>
@@ -58,10 +76,13 @@ a {
 }
 .navbar {
   top: 0;
-  transform: translateY(150%);
+  transform: translateY(100%);
   position: absolute;
   display: flex;
   width: 100%;
   justify-content: space-evenly
+}
+.logo {
+  content: url("../assets/sneaker-pimp.png")
 }
 </style>
