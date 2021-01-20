@@ -4,11 +4,11 @@
     <Navbar />
     <div>
       <div class="row mt-3" style="padding: 1.5rem">
-        <div class="col-md-7 product_image">
+        <div class="col-md-7 mb-2 product_image">
           <img src="../assets/men-category.jpg" style="width: 100%" />
         </div>
         <div class="col-md-5">
-          <div style="width: 80%; display: flex; justify-content: space-between">
+          <div style="width: 100%; display: flex; justify-content: space-between">
             <div><strong>Home</strong></div>
             <div>
               <font-awesome-icon style="color: lightgray" :icon="['fas', 'long-arrow-alt-right']" />
@@ -34,39 +34,35 @@
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum
+            only five centuries,
           </div>
           <div class="card" style="border: 0">
             <div class="card-header row mt-4" style="padding-left: 0; text-align: left; background-color: transparent; border: 0;">
-              <div class="col-md-3"><strong>More Colorways:</strong></div>
-              <div class="col-md-3">
+              <div class="col-12 col-md-3"><strong>More Colorways:</strong></div>
+              <div class="col-4 col-md-3">
                 <img type="button" src="../assets/men-category.jpg" style="width: 100%" />
               </div>
-              <div class="col-md-3">
+              <div class="col-4 col-md-3">
                 <img type="button" src="../assets/men-category.jpg" style="width: 100%" />
               </div>
-              <div class="col-md-3">
+              <div class="col-4 col-md-3">
                 <img type="button" src="../assets/men-category.jpg" style="width: 100%" />
               </div>
             </div>
             <div class="row text-left mt-4">
-              <div class="col-md-3"><strong>Size:</strong></div>
-              <div class="col-md-8">
+              <div class="col-12 col-md-3"><strong>Size:</strong></div>
+              <div class="col-12 col-md-8">
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-2 col-md-2">
                     <button style="border: 1px solid black" type="button" class="btn btn-light">S</button>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-2 col-md-2">
                     <button style="border: 1px solid black" type="button" class="btn btn-light">M</button>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-2 col-md-2">
                     <button style="border: 1px solid black" type="button" class="btn btn-light">L</button>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-2 col-md-2">
                     <button style="border: 1px solid black" type="button" class="btn btn-light">XL</button>
                   </div>
                 </div>
@@ -128,8 +124,12 @@
         <div class="col-md-8 text-left">
           <div class="card" style="border: none">
             <div class="card-header row mb-2" style="text-align: left; background-color: transparent; border: 0">
-              <div type="button" @click="description_clicked" class="col-md-3" id="descrip" style=" padding-left: 0"><h5>Description</h5></div>
-              <div type="button" @click="specifications_clicked" class="col-md-3" id="specs" style="color: darkgray"><h5>Specifications</h5></div>
+              <div type="button" @click="description_clicked" class="col-6 col-md-3" id="descrip" style=" padding-left: 0">
+                <h5>Description</h5>
+              </div>
+              <div type="button" @click="specifications_clicked" class="col-6 col-md-3" id="specs" style="color: darkgray">
+                <h5>Specifications</h5>
+                </div>
             </div>
             <div v-show="description" style="clear: both; color: darkgray">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -157,32 +157,20 @@
           <div class="text-left card-header" style="border: none; background-color: transparent">
             <h4>Related Products</h4>
           </div>
-          <div
-            class="card-header row mb-2"
-            style="background-color: transparent; border: 0"
-          >
-            <div class="col-md-3">
+          <div class="card-header row mb-2" style="background-color: transparent; border: 0">
+            <div class="col-6 col-md-3">
               <div>
                 <img class="image_width_100" src="../assets/kona-thumb.jpg" />
               </div>
               <div style="text-align: left">
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkred"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkblue"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkgreen"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
                 </div>
                 <div style="clear: left">
                   <div>Julia Coat</div>
@@ -190,28 +178,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div>
                 <img class="image_width_100" src="../assets/kona-thumb-2.jpg" />
               </div>
               <div style="text-align: left">
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkred"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkblue"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkgreen"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
                 </div>
                 <div style="clear: left">
                   <div>Julia Coat</div>
@@ -219,28 +198,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div>
                 <img class="image_width_100" src="../assets/kona-thumb.jpg" />
               </div>
               <div style="text-align: left">
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkred"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkblue"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkgreen"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
                 </div>
                 <div style="clear: left">
                   <div>Julia Coat</div>
@@ -248,28 +218,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
               <div>
                 <img class="image_width_100" src="../assets/kona-thumb-2.jpg" />
               </div>
               <div style="text-align: left">
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkred"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkblue"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
                 </div>
                 <div style="float: left; padding: 5px">
-                  <font-awesome-icon
-                    :icon="['fas', 'circle']"
-                    color="darkgreen"
-                  />
+                  <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
                 </div>
                 <div style="clear: left">
                   <div>Julia Coat</div>

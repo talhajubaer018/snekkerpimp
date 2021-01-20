@@ -1,11 +1,11 @@
 <template>
   <div class="header_top row" style="background-color: black; color: white;">
-    <div class="col-md-4 mt-2 text-left" style="padding-left: calc(1.5rem + 15px);">
+    <div class="col-12 col-md-4 mt-2 text-left header-social" style="padding-left: calc(1.5rem + 15px);">
       <font-awesome-icon class="mr-2" :icon="['fab', 'facebook-f']" />
       <font-awesome-icon :icon="['fab', 'instagram']" />
     </div>
-    <div class="col-md-4 mt-2 text-center">{{msg}}</div>
-    <div class="col-md-4 text-right">
+    <div class="col-12 col-md-4 mt-2 text-center">{{msg}}</div>
+    <div class="col-12 col-md-4 text-right header-language">
       <div class="dropdown">
         <button class="btn dropdown-toggle" style="color: white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Select Language
@@ -44,5 +44,13 @@ li {
 }
 a {
   color: #42b983;
+}
+@media only screen and (max-width: 480px){
+  .header-social {
+    text-align: center !important;
+  }
+  .header-language {
+    text-align: center !important;
+  }
 }
 </style>

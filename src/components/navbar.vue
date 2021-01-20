@@ -2,16 +2,16 @@
   <div class="navbar row" style="">
     <div class='col-md-12'>
       <div class="row">
-        <div class="navigation_container col-md-4 mt-3" style="text-align: left">
-          <router-link to="/brands" style="padding: 0.5rem;">Brands</router-link>
+        <div class="navigation_container col-12 col-md-4 mt-3 mb-2" style="text-align: left">
+          <router-link to="/brands" style="padding: 0.5rem; padding-left: 1.5rem">Brands</router-link>
           <router-link to="/category" style="padding: 0.5rem">Category</router-link>
           <router-link to="/collections" style="padding: 0.5rem">Collections</router-link>
           <router-link to="/accessories" style="padding: 0.5rem">Accessories</router-link>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-12 col-md-4 text-center">
           <div class="logo mx-auto"></div>
         </div>
-        <div class="col-md-4 text-right mt-3" style="padding: 0; width: 100%; display: flex; justify-content: space-between">
+        <div class="col-12 col-md-4 text-right mt-3 navbar-login" style="">
           <div>Login</div>
           <div>
             <div @click="search_click_function" v-show="!search_clicked" type="button">
@@ -84,5 +84,19 @@ a {
 }
 .logo {
   content: url("../assets/sneaker-pimp.png")
+}
+.navbar-login {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+@media only screen and (max-width: 480px){
+  .navbar-login {
+    justify-content: space-around;
+  }
+  .navbar {
+    padding-top: 1rem;
+  }
 }
 </style>
