@@ -10,14 +10,15 @@ import './assets/app.scss'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 // fa regular
-import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faHeart, faComment } from '@fortawesome/free-regular-svg-icons'
 // fa brand
 import { faFacebookF, faInstagram, faCcPaypal, faCcVisa, faCcMastercard, faCcAmex } from '@fortawesome/free-brands-svg-icons'
 // fa solid
-import { faSearch, faShoppingBag, faLongArrowAltLeft, faLongArrowAltRight, faArrowCircleRight, faCircle, faMinus, faPlus, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faShoppingBag, faLongArrowAltLeft, faLongArrowAltRight, faArrowCircleRight, faCircle, faMinus, faPlus, faChevronRight, faShoppingCart, faUsers } from '@fortawesome/free-solid-svg-icons'
 library.add(faFacebookF, faInstagram, faSearch, faHeart, faShoppingBag,
   faLongArrowAltLeft, faLongArrowAltRight, faArrowCircleRight, faCcPaypal,
-  faCcVisa, faCcMastercard, faCcAmex, faCircle, faMinus, faPlus, faChevronRight)
+  faCcVisa, faCcMastercard, faCcAmex, faCircle, faMinus, faPlus, faChevronRight,
+  faComment, faShoppingCart, faUsers)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
