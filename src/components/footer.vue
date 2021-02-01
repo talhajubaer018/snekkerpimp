@@ -1,5 +1,5 @@
 <template>
-  <div class="card" style="border: 0; background-color: #f7f8f9; padding-top: 2rem">
+  <div class="card mb-4 mt-5" style="border: 0; background-color: #f7f8f9; padding-top: 2rem">
     <div class="row footer_container" style="padding-left: 2rem">
       <div class="col-12 offset-md-1 col-md-6">
         <div class="card-header row" style="padding:0; color: #b9b9ba; background-color: transparent; border: 0; width: 100%; display: flex; justify-content: space-between">
