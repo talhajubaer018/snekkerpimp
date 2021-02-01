@@ -22,7 +22,7 @@
                 <input type="checkbox" class="pull-left mt-1 mr-2">
                 <label for="" class='pull-left'>Remember Me</label>
                 <h6 class="pull-right" style="text-decoration: underline; font-weight: bold" type="button">Lost Password</h6>
-                <button type="button" class="clear-both pull-left mt-4 btn btn-dark" style="border-radius: 20px">Login</button>
+                <button type="button" class="clear-both pull-left mt-4 btn btn-dark" style="border-radius: 20px; width: 100px">Login</button>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
                 Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.
               </div>
               <div class='mt-4'>
-                <button type="button" class="clear-both pull-left mt-4 btn btn-dark" style="border-radius: 20px">Register</button>
+                <button type="button" class="clear-both pull-left mt-4 btn btn-dark" style="border-radius: 20px; width: 100px">Register</button>
               </div>
             </div>
           </div>

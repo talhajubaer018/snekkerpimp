@@ -17,7 +17,7 @@
               </div>
               <input type="email" class="contact-input form-control" placeholder="Username or Email">
               <div class='mt-4'>
-                <button type="button" class="clear-both pull-left mt-4 btn btn-dark" style="border-radius: 20px">Reset Password</button>
+                <button type="button" class="clear-both pull-left mt-4 btn btn-dark" style="border-radius: 20px; width: 175px">Reset Password</button>
               </div>
             </div>
           </div>
