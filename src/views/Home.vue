@@ -224,9 +224,6 @@ export default {
     width: 100%;
     height: 100%;
 }
-.navbar {
-  z-index: 100;
-}
 .category_name {
 position: absolute;
 }
@@ -237,8 +234,9 @@ position: absolute;
   width: 100%;
 }
 .navbar {
+  z-index: 100;
   top: 0;
-  transform: translateY(50%);
+  transform: translate(1rem , 50%);
   position: absolute;
   display: flex;
   width: 100%;

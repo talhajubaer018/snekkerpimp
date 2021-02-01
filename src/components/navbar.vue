@@ -3,7 +3,7 @@
     <div class='col-md-12'>
       <div class="row">
         <div class="navigation_container col-12 col-md-4 mt-3 mb-2" style="text-align: left">
-          <router-link to="/brands" style="padding: 0.5rem; padding-left: 1.5rem">Brands</router-link>
+          <router-link to="/brands" style="padding: 0.5rem; padding-left: 0.5rem">Brands</router-link>
           <router-link to="/category" style="padding: 0.5rem">Category</router-link>
           <router-link to="/collections" style="padding: 0.5rem">Collections</router-link>
           <router-link to="/accessories" style="padding: 0.5rem">Accessories</router-link>
