@@ -250,10 +250,10 @@ position: absolute;
   padding-right: 1.5rem;
 }
 .navbar {
-  padding-left: 0;
+  padding-left: 1rem;
   z-index: 100;
   top: 0;
-  transform: translate(1rem , 50%);
+  transform: translate(0rem , 50%);
   position: absolute;
   display: flex;
   width: 100%;

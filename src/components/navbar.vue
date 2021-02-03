@@ -1,6 +1,6 @@
 <template>
   <div class="navbar row" style="">
-    <div class='col-12 col-md-12'>
+    <div class='col-12 col-md-12' style="padding-left: 0">
       <div class="row">
         <div class="navigation_container col-12 col-md-4 mt-3 mb-2" style="text-align: left">
           <router-link to="/brands" style="padding: 0.5rem; padding-left: 0.5rem">Brands</router-link>
@@ -8,7 +8,16 @@
           <router-link to="/collections" style="padding: 0.5rem">Collections</router-link>
           <router-link to="/accessories" style="padding: 0.5rem">Accessories</router-link>
         </div>
+        <div id="mobile_nav" class="col-12 col-md-4 mt-2 mb-2">
+          <router-link to="/brands" style="padding: 0.5rem; padding-left: 0.5rem">Brands</router-link>
+          <router-link to="/category" style="padding: 0.5rem">Category</router-link>
+          <router-link to="/collections" style="padding: 0.5rem">Collections</router-link>
+          <router-link to="/accessories" style="padding: 0.5rem">Accessories</router-link>
+        </div>
         <div class="col-12 col-md-4 text-center">
+          <div @click="navigation_toggle_function" class="navigation-bars">
+            <font-awesome-icon class="navigation-bars" :icon="['fas', 'bars']"/>
+          </div>
           <router-link to="/">
             <div class="logo mx-auto"></div>
           </router-link>
@@ -48,12 +57,23 @@ export default {
   },
   data () {
     return {
-      search_clicked: false
+      search_clicked: false,
+      navigation_toggle: false
     }
   },
   methods: {
     search_click_function () {
       this.search_clicked = true
+    },
+    navigation_toggle_function () {
+      this.navigation_toggle = !this.navigation_toggle
+      if (this.navigation_toggle) {
+        document.getElementById('mobile_nav').style.opacity = '1'
+        document.getElementById('mobile_nav').style.transition = '500ms'
+      } else {
+        document.getElementById('mobile_nav').style.opacity = '0'
+        document.getElementById('mobile_nav').style.transition = '500ms'
+      }
     }
   }
 }
@@ -78,13 +98,17 @@ a {
 .navigation_container a {
   color: black;
 }
+#mobile_nav a {
+  color: black;
+}
 .navbar {
   top: 0;
   transform: translateY(100%);
   position: absolute;
   display: flex;
   width: 100%;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  margin: 0;
 }
 .logo {
   content: url("../assets/sneaker-pimp.png")
@@ -95,7 +119,16 @@ a {
   display: flex;
   justify-content: space-between
 }
+.navigation-bars {
+  display: none;
+}
 @media only screen and (max-width: 480px){
+  #mobile_nav {
+    opacity: 0;
+  }
+  .navigation_container {
+    display: none;
+  }
   .navbar-login {
     justify-content: space-between;
     padding-left: 1.5rem;
@@ -105,6 +138,12 @@ a {
     padding-top: 1rem;
     padding: 0;
     margin: 0;
+  }
+  .navigation-bars {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
   }
 }
 </style>
