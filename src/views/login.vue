@@ -6,7 +6,7 @@
         <Navbar />
         <div v-show="login">
           <div class="row mt-5">
-            <div class="col-md-6 mx-auto text-left">
+            <div class="col-10 col-md-6 mx-auto text-left">
               <div class="inline-block mr-5"><h2>Login</h2></div>
               <div @click="login = !login" class="inline-block">
                 <h5 class="inline-block mr-2" style="text-decoration: underline;" type="button">Create Account</h5>
@@ -15,13 +15,15 @@
             </div>
           </div>
           <div class="row mt-4 mb-5">
-            <div class="col-md-6 mx-auto">
+            <div class="col-10 col-md-6 mx-auto">
               <input type="email" class="contact-input form-control" placeholder="Email address*">
               <input type="password" class="contact-input mt-4 form-control" placeholder="Password*">
               <div class='mt-4'>
                 <input type="checkbox" class="pull-left mt-1 mr-2">
                 <label for="" class='pull-left'>Remember Me</label>
-                <h6 class="pull-right" style="text-decoration: underline; font-weight: bold" type="button">Lost Password</h6>
+                <h6 class="pull-right" style="text-decoration: underline; font-weight: bold" type="button">
+                  <router-link to="/lost-password" style="padding: 0.5rem; color: black">Lost Password</router-link>
+                </h6>
                 <button type="button" class="clear-both pull-left mt-4 btn btn-dark" style="border-radius: 20px; width: 100px">Login</button>
               </div>
             </div>
@@ -29,8 +31,8 @@
         </div>
         <div  v-show="!login">
           <div class="row mt-5">
-            <div class="col-md-6 mx-auto text-left">
-              <div class="inline-block mr-5"><h2>Create Account</h2></div>
+            <div class="col-10 col-md-6 mx-auto text-left">
+              <div class="inline-block mr-5"><h3>Create Account</h3></div>
               <div @click="login = !login" class="inline-block">
                 <h5 class="inline-block mr-2" style="text-decoration: underline;" type="button">Login</h5>
                 <font-awesome-icon class="inline-block" :icon="['fas', 'long-arrow-alt-right']"/>
@@ -38,7 +40,7 @@
             </div>
           </div>
           <div class="row mt-4 mb-5">
-            <div class="col-md-6 mx-auto">
+            <div class="col-10 col-md-6 mx-auto">
               <input type="email" class="contact-input form-control" placeholder="Email address*">
               <input type="password" class="contact-input mt-4 form-control" placeholder="Password*">
               <div class="text-left mt-4">

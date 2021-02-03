@@ -3,8 +3,8 @@
     <div class="row">
       <div class='col-12'>
         <Header msg="Free Delivery on all orders over $60"/>
+        <Navbar/>
         <div class="row">
-          <Navbar/>
           <div class="col-12 carousel slide slider_img_wrapper" style="padding: 0" id="carouselExampleIndicators" data-ride="carousel">
             <div class="carousel-inner slider_img">
               <div class="carousel-item active">
@@ -19,8 +19,8 @@
             </div>
             <div class="slider_img"></div>
 
-            <div class="" style="z-index: 100; position: absolute; bottom: 0; width: 100%; transform: translateY(-50%);">
-              <div style="float: left; transform: translateX(100%)">
+            <div class="slider-buttons" style="">
+              <div class="slider-arrows" style="">
                 <div style="float: left; color: black" class="" href="#carouselExampleIndicators" role="button" data-slide="prev">
                   <font-awesome-icon :icon="['fas', 'long-arrow-alt-left']" size="2x"/>
                 </div>
@@ -29,21 +29,23 @@
                 </div>
               </div>
               <div style="float: right; transform: translateX(-100%);"><font-awesome-icon :icon="['fas', 'arrow-circle-right']" size="2x"/></div>
-              <div style="float: right; transform: translateX(-50%); margin-top:5px">Shop Now</div>
+              <div style="float: right; transform: translateX(-50%); margin-top:5px">
+                <router-link to="/shop" style="color: black"><strong>Shop Now</strong></router-link>
+              </div>
             </div>
           </div>
         </div>
         <div class="card mt-3" style="border: 0">
           <div class="card-header row" style="background-color: transparent; border: 0">
-            <div class="col-12 col-md-4">
+            <div class="category col-12 col-md-4">
               <div style="position: absolute; padding: 2rem; font-size: 2em">Men</div>
               <img class="image_width_100" src="../assets/men-category.jpg"/>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="category col-12 col-md-4">
               <div style="position: absolute; padding: 2rem; font-size: 2em">Women</div>
               <img class="image_width_100" src="../assets/women-category.jpg"/>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="category col-12 col-md-4">
               <div style="position: absolute; padding: 2rem; font-size: 2em">Accessory</div>
               <img class="image_width_100" src="../assets/accessory-category.jpg"/>
             </div>
@@ -224,6 +226,17 @@ export default {
     width: 100%;
     height: 100%;
 }
+.slider-buttons {
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.slider-arrows {
+  float: left;
+  transform: translateX(100%)
+}
 .category_name {
 position: absolute;
 }
@@ -233,7 +246,11 @@ position: absolute;
 .image_width_100 {
   width: 100%;
 }
+* >>> .navbar-login {
+  padding-right: 1.5rem;
+}
 .navbar {
+  padding-left: 0;
   z-index: 100;
   top: 0;
   transform: translate(1rem , 50%);
@@ -253,7 +270,34 @@ position: absolute;
 
 @media only screen and (max-width: 480px){
   .carousel {
-   min-height: 350px;
+   min-height: 250px;
+  }
+  .carousel-item {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 56.25%;
+    position: absolute;
+  }
+  .carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar {
+    position: relative;
+    transform: translateY(0);
+  }
+  .slider-buttons {
+    transform: translateY(0);
+  }
+  .slider-arrows {
+    transform: translateX(50%)
+  }
+  .category {
+    margin-bottom: 1rem;
   }
   .coats_jackets_container {
     font-size: 2rem;

@@ -5,7 +5,7 @@
         <Header msg="Free Delivery on all orders over $60" />
         <Navbar />
         <div class="row mt-5 mb-5">
-          <div class="col-md-6 mx-auto text-left">
+          <div class="col-10 col-md-6 mx-auto text-left">
             <div class="mb-5">
               <h2>Order Tracking</h2>
             </div>

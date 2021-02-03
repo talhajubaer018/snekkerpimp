@@ -43,20 +43,20 @@
                   <div class="col-md-3 mt-3">$39.00</div>
                 </div>
                 <div class="col-md-12 mt-3">
-                  <div class='col-md-5 pull-left'>Subtotal:</div>
-                  <div class='col-md-5 pull-right'>$39.00</div>
+                  <div class='col-6 col-md-5 pull-left'>Subtotal:</div>
+                  <div class='col-6 col-md-5 pull-right amount-right'>$39.00</div>
                 </div>
                 <div class="col-md-12 mt-3 clear-both">
-                  <div class='col-md-5 pull-left mt-2'>Shipping:</div>
-                  <div class='col-md-5 pull-right mt-2'>$5.00 via Flat rate</div>
+                  <div class='col-6 col-md-5 pull-left mt-2'>Shipping:</div>
+                  <div class='col-6 col-md-5 pull-right amount-right mt-2'>$5.00 via Flat rate</div>
                 </div>
                 <div class="col-md-12 mt-3 clear-both">
-                  <div class='col-md-5 pull-left mt-2'>Payment method:</div>
-                  <div class='col-md-5 pull-right mt-2'>Cash on delivery</div>
+                  <div class='col-6 col-md-5 pull-left mt-2'>Payment method:</div>
+                  <div class='col-6 col-md-5 pull-right amount-right mt-2'>Cash on delivery</div>
                 </div>
                 <div class="col-md-12 mt-3 clear-both">
-                  <div class='col-md-5 pull-left mt-2'><strong>Total:</strong></div>
-                  <div class='col-md-5 pull-right mt-2'><strong>$44.00</strong></div>
+                  <div class='col-6 col-md-5 pull-left mt-2'><strong>Total:</strong></div>
+                  <div class='col-6 col-md-5 pull-right amount-right mt-2'><strong>$44.00</strong></div>
                 </div>
               </div>
 
@@ -129,5 +129,11 @@ export default {
 .status-box {
   padding: 1rem;
   border: 1px solid grey
+}
+@media only screen and (max-width: 480px){
+  .amount-right {
+    text-align: right;
+    padding: 0;
+  }
 }
 </style>

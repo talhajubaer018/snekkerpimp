@@ -6,12 +6,12 @@
         <Navbar />
         <div>
           <div class="row mt-5">
-            <div class="col-md-6 mx-auto text-left">
-              <div class="inline-block mr-5"><h2><strong>Lost your password?</strong></h2></div>
+            <div class="col-10 col-md-6 mx-auto text-left">
+              <div class="inline-block mr-5"><h4><strong>Lost your password?</strong></h4></div>
             </div>
           </div>
           <div class="row mt-4 mb-5">
-            <div class="col-md-6 mx-auto">
+            <div class="col-10 col-md-6 mx-auto">
               <div class="text-left mb-4">
                 Please enter your username or email address. You will receive a link to create a new password via email.
               </div>

@@ -46,8 +46,8 @@
           </div>
         </div>
         <div class="row mt-5 mb-5">
-          <div class="offset-md-1 col-md-3 text-left"><h2>Get in contact with us by filling out our contact form.</h2></div>
-          <div class="col-md-8">
+          <div class="offset-1 col-10 offset-md-1 col-md-3 text-left"><h3>Get in contact with us by filling out our contact form.</h3></div>
+          <div class="offset-1 col-10 offset-md-0 col-md-8">
             <div>
               <input type="name" class="contact-input form-control" placeholder="Name*">
               <input type="email" class="contact-input form-control" placeholder="Email*">

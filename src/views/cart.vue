@@ -6,10 +6,10 @@
       <Navbar />
         <div class="card" style="border: 0">
           <div class="card-header row" style="padding-left: 0; text-align: left; background-color: transparent; border: 0;">
-            <div class="offset-md-1 col-md-8 mt-2"><h2>Cart</h2></div>
+            <div class="offset-1 col-10  offset-md-1 col-md-8 mt-2"><h2>Cart</h2></div>
           </div>
           <div class="row">
-            <div class="col-12 offset-md-1 col-md-10">
+            <div class="col-10 mx-auto  offset-md-1 col-md-10">
               <div class='pull-left mr-1'><strong>PREVIEW CART</strong></div>
               <div class='pull-left mr-1'>
                 <font-awesome-icon type="button" :icon="['fas', 'chevron-right']"/>
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-md-7" style="overflow-x: scroll">
+            <div class="col-md-7 shop-table" style="">
               <table class="table table-borderless">
                 <thead>
                   <tr style="border-bottom: 1px solid darkgray">
@@ -208,5 +208,10 @@ export default {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+}
+@media only screen and (max-width: 480px){
+  .shop-table {
+    overflow-x: scroll;
+  }
 }
 </style>

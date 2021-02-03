@@ -1,6 +1,6 @@
 <template>
   <div class="navbar row" style="">
-    <div class='col-md-12'>
+    <div class='col-12 col-md-12'>
       <div class="row">
         <div class="navigation_container col-12 col-md-4 mt-3 mb-2" style="text-align: left">
           <router-link to="/brands" style="padding: 0.5rem; padding-left: 0.5rem">Brands</router-link>
@@ -9,10 +9,14 @@
           <router-link to="/accessories" style="padding: 0.5rem">Accessories</router-link>
         </div>
         <div class="col-12 col-md-4 text-center">
-          <div class="logo mx-auto"></div>
+          <router-link to="/">
+            <div class="logo mx-auto"></div>
+          </router-link>
         </div>
         <div class="col-12 col-md-4 text-right mt-3 navbar-login" style="">
-          <div>Login</div>
+          <div>
+            <router-link style="color: black" to="/login">Login</router-link>
+          </div>
           <div>
             <div @click="search_click_function" v-show="!search_clicked" type="button">
               <font-awesome-icon :icon="['fas', 'search']"/>
@@ -93,10 +97,14 @@ a {
 }
 @media only screen and (max-width: 480px){
   .navbar-login {
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: calc(1.5rem + 10px) !important;
   }
   .navbar {
     padding-top: 1rem;
+    padding: 0;
+    margin: 0;
   }
 }
 </style>

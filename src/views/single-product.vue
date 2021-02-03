@@ -10,7 +10,7 @@
               <img src="../assets/men-category.jpg" style="width: 100%" />
             </div>
             <div class="col-md-5">
-              <div style="width: 100%; display: flex; justify-content: space-between">
+              <div class="category-nav" style="">
                 <div><strong>Home</strong></div>
                 <div>
                   <font-awesome-icon style="color: lightgray" :icon="['fas', 'long-arrow-alt-right']" />
@@ -41,19 +41,24 @@
               <div class="card" style="border: 0">
                 <div class="card-header row mt-4" style="padding-left: 0; text-align: left; background-color: transparent; border: 0;">
                   <div class="col-12 col-md-3"><strong>More Colorways:</strong></div>
-                  <div class="col-4 col-md-3">
-                    <img type="button" src="../assets/men-category.jpg" style="width: 100%" />
-                  </div>
-                  <div class="col-4 col-md-3">
-                    <img type="button" src="../assets/men-category.jpg" style="width: 100%" />
-                  </div>
-                  <div class="col-4 col-md-3">
-                    <img type="button" src="../assets/men-category.jpg" style="width: 100%" />
+                  <div class="col-md-9">
+                    <div style="display: flex; justify-content: space-between">
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                    </div>
+                    <div class="mt-2" style="display: flex; justify-content: space-between">
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                      <img type="button" src="../assets/men-category.jpg" style="width: 20%" />
+                    </div>
                   </div>
                 </div>
                 <div class="row text-left mt-4">
                   <div class="col-12 col-md-3"><strong>Size:</strong></div>
-                  <div class="col-12 col-md-8">
+                  <div class="col-12 col-md-9">
                     <div class="row">
                       <div class="col-2 col-md-2">
                         <button style="border: 1px solid black" type="button" class="btn btn-light">S</button>
@@ -70,7 +75,7 @@
                     </div>
                     <div class="mt-4" style="text-decoration: underline" type="button">Size Guide</div>
                     <div class="row">
-                      <div class="btn mr-4 mt-2" style="background-color: #f7f8f9; border-radius: 25px">
+                      <div class="btn ml-2 mr-4 mt-2" style="background-color: #f7f8f9; border-radius: 25px">
                         <div style="float: left; padding: 5px">
                           <font-awesome-icon type="button" :icon="['fas', 'minus']"/>
                         </div>
@@ -329,5 +334,15 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+}
+.category-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1400px){
+  .category-nav {
+    width: 75%;
+  }
 }
 </style>
