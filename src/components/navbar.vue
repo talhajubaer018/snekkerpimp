@@ -122,6 +122,11 @@ a {
 .navigation-bars {
   display: none;
 }
+@media only screen and (min-width: 481px){
+  #mobile_nav {
+    display: none;
+  }
+}
 @media only screen and (max-width: 480px){
   #mobile_nav {
     opacity: 0;
