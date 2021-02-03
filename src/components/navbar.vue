@@ -130,6 +130,8 @@ a {
 @media only screen and (max-width: 480px){
   #mobile_nav {
     opacity: 0;
+    display: flex;
+    justify-content: space-between;
   }
   .navigation_container {
     display: none;
