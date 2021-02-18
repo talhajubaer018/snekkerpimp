@@ -6,6 +6,9 @@ import store from './store'
 import 'bootstrap'
 import './assets/app.scss'
 
+// import configs
+// require('dotenv').config()
+
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'

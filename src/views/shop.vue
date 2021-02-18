@@ -10,26 +10,13 @@
               <div class="col-6 col-md-12">
                 <div class="mb-2" style="color: darkgray">Filter by Category</div>
                 <div class="">
-                  <div><strong>Men</strong></div>
+                  <!-- <div><strong>Men</strong></div> -->
                   <div class="ml-2">
-                    <div>Shirt</div>
-                    <div>Jacket</div>
-                    <div>Accessories</div>
-                    <div>Pullover</div>
-                    <div>Blog</div>
-                  </div>
-                </div>
-              </div>
-              <div class='col-6 col-md-12'>
-                <div class="mb-2" style="color: transparent">Filter by Category</div>
-                <div class="mb-5">
-                  <div><strong>Women</strong></div>
-                  <div class='ml-2'>
-                    <div>Tops</div>
-                    <div>Accessories</div>
-                    <div>Jeans</div>
-                    <div>Jacket</div>
-                    <div>Shoes</div>
+                    <div v-for="category in categories" :key="category.id">
+                      <a href="#">
+                        <span @click="filterWith({ category: category.id})">{{ category.name }}</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -104,9 +91,9 @@
             </div>
             <div class="card mt-3" style="border: 0">
               <div class="card-header row mb-4" style="background-color: transparent; border: 0; padding: 0">
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" v-for="product in products" :key="product.id">
                   <div>
-                    <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
+                    <img class="image_width_100" :src="product.images[0]"/>
                   </div>
                   <div style="text-align: left">
                     <div style="float: left; padding: 5px; padding-left: 0">
@@ -119,192 +106,13 @@
                       <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
                     </div>
                     <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-header row mb-4" style="background-color: transparent; border: 0; padding: 0">
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-header row mb-4" style="background-color: transparent; border: 0; padding: 0">
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div>
-                    <img class="image_width_100" src="../assets/kona-thumb-2.jpg"/>
-                  </div>
-                  <div style="text-align: left">
-                    <div style="float: left; padding: 5px; padding-left: 0">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkred"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkblue"/>
-                    </div>
-                    <div style="float: left; padding: 5px">
-                      <font-awesome-icon :icon="['fas', 'circle']" color="darkgreen"/>
-                    </div>
-                    <div style="clear: left">
-                      <div>Julia Coat</div>
-                      <div>$249.00</div>
+                      <div>{{ product.name }}</div>
+                      <div>
+                        <del v-if="product.price > product.offer_price">
+                          ৳{{ product.price }}
+                        </del>
+                        ৳{{ product.offer_price }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -320,12 +128,49 @@
 <script>
 // @ is an alias to /src
 
+import axios from 'axios'
 import Navbar from '@/components/navbar.vue'
 import Header from '@/components/header.vue'
 import Footer from '@/components/footer.vue'
 
 export default {
   name: 'Home',
+  data () {
+    return {
+      filters: {},
+      products: [],
+      categories: []
+    }
+  },
+  created () {
+    this.refreshCategories()
+    this.refreshProducts()
+  },
+  methods: {
+    filterWith (filters) {
+      this.products = []
+      this.filters = Object.assign({}, this.filters, filters)
+      this.refreshProducts()
+    },
+    refreshProducts () {
+      axios
+        .get(process.env.VUE_APP_API_BASE + '/products', {
+          params: this.filters
+        })
+        .then(res => res.data)
+        .then(res => {
+          this.products = res.data
+        })
+    },
+    refreshCategories () {
+      axios
+        .get(process.env.VUE_APP_API_BASE + '/categories')
+        .then(res => res.data)
+        .then(res => {
+          this.categories = res.data
+        })
+    }
+  },
   components: {
     Footer,
     Header,
